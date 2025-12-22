@@ -40,6 +40,9 @@ Tools are contracts between deterministic systems and non-deterministic agents. 
 
 ### Operational Excellence
 
+**Context Compression**
+When agent sessions exhaust memory, compression becomes mandatory. The correct optimization target is tokens-per-task, not tokens-per-request. Structured summarization with explicit sections for files, decisions, and next steps preserves more useful information than aggressive compression. Artifact trail integrity remains the weakest dimension across all compression methods.
+
 **Context Optimization**
 Techniques include compaction (summarizing context near limits), observation masking (replacing verbose tool outputs with references), prefix caching (reusing KV blocks across requests), and strategic context partitioning (splitting work across sub-agents with isolated contexts).
 
@@ -65,6 +68,7 @@ This collection integrates with itself—skills reference each other and build o
 Internal skills in this collection:
 - [context-fundamentals](skills/context-fundamentals/SKILL.md)
 - [context-degradation](skills/context-degradation/SKILL.md)
+- [context-compression](skills/context-compression/SKILL.md)
 - [multi-agent-patterns](skills/multi-agent-patterns/SKILL.md)
 - [memory-systems](skills/memory-systems/SKILL.md)
 - [tool-design](skills/tool-design/SKILL.md)

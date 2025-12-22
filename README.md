@@ -18,6 +18,7 @@ These skills establish the foundational understanding required for all subsequen
 |-------|-------------|
 | [context-fundamentals](skills/context-fundamentals/) | Understand what context is, why it matters, and the anatomy of context in agent systems |
 | [context-degradation](skills/context-degradation/) | Recognize patterns of context failure: lost-in-middle, poisoning, distraction, and clash |
+| [context-compression](skills/context-compression/) | Design and evaluate compression strategies for long-running sessions |
 
 ### Architectural Skills
 
